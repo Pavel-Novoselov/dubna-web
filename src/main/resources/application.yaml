@@ -1,0 +1,18 @@
+server:
+  hostname: localhost
+  port: ${PORT:8189}
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+
+    url: ${DATABASE_PATH}
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp

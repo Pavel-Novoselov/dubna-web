@@ -1,0 +1,64 @@
+###
+GET http://localhost:8189/geetter/api/user/all
+
+###
+
+POST http://localhost:8189/geetter/api/user/
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "000",
+    "firstName": "admin",
+    "lastName": "admin",
+    "email": "admin@gmail.com",
+    "phone": 111111111
+}
+
+###
+
+PUT http://localhost:8189/geetter/api/user/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "username": "admin",
+  "password": "000",
+  "firstName": "admin",
+  "lastName": "admin",
+  "email": "admin@gmail.com",
+  "phone": 11111111
+}
+
+###
+
+POST http://localhost:8189/geetter/api/user
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "000"
+}
+
+###
+
+GET http://localhost:8189/geetter/api/user/1/id
+
+###
+
+GET http://localhost:8189/geetter/api/user/admin/login
+
+###
+
+GET http://localhost:8189/geetter/api/user/admin@gmail.com/email
+
+###
+
+GET http://localhost:8189/geetter/api/user/11111111/phone
+
+###
+
+DELETE http://localhost:8189/geetter/api/user/1/id
+
+
+
